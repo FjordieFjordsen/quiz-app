@@ -8,18 +8,31 @@ body {
 
 *::-webkit-scrollbar {
     width: 10px;
-
 }
 
 *::-webkit-scrollbar-track {
-    background: #0e0d0d;
+    background: #e6dddd;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: rgb(5, 5, 5);
+    background-color: rgb(16, 58, 196);
     border-radius: 20px;
     border: 1px solid grey;
 }
+
+*::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background-color: rgba(6, 8, 150, 0.384); /* Neue Farbe beim Hover */
+    border: 1px solid rgba(66, 9, 9, 0.89); /* Neue Randfarbe beim Hover */
+}
+
+.container-fluid {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: center !important;
+}
+
 
 .container {
     min-height: 100vh;
@@ -29,8 +42,17 @@ body {
     align-items: center;
 }
 
+.card-titel {
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
 .card {
     width: 30rem;
+}
+
+h5 {
+    text-align: center;
 }
 
 .quiz-card {
@@ -44,10 +66,58 @@ body {
     border-top: 1px solid rgb(78, 77, 77);
     align-items: center;
     padding-top: 12px;
-    margin-top: 8px;
+    margin-top: 16px;
 }
 
 .quiz-answer-card:hover {
     cursor: pointer;
     background-color: rgba(29, 18, 180, 0.185);
 }
+
+.bg-danger .bg-success {
+    color: white !important;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.final-headline {
+    font-size: 22px;
+    margin-bottom: 28px;
+}
+
+.restart-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.height {
+    height: 96vh !important;
+}
+
+.imp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.imp h5 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+@media(max-width: 500px) {
+    .quiz-answer-card {
+        width: auto;
+    }
+}
+
+
+
