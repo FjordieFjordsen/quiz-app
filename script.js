@@ -47,6 +47,7 @@ let currentQuestion = 0; //aktuelle Frage, die beim Laden der Seite aufgerufen w
 let audio_success = new Audio('sounds/right.mp3');
 let audio_wrong = new Audio('sounds/falsch.mp3');
 let audio_win = new Audio('sounds/fanfare.mp3');
+let audio_new = new Audio('sounds/new.mp3');
 
 
 function init() {
@@ -150,5 +151,5 @@ function restartGame() {
     rightQuestions = 0;// der Wert wird überschrieben
     currentQuestion = 0;
     init();
-
+    audio_new.play();
 }
